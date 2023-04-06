@@ -1,0 +1,87 @@
+
+:root{
+    font-size: 15px;
+}
+.container{
+    display: grid;
+    justify-content: space-around;
+    justify-content: center;
+    /* align-items: stretch; */
+    border: 2px solid black;
+    padding-inline-start: 3rem;
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+.vertical-card{
+    display: flex;
+    flex-direction: column;
+    position: relative;    
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: 20rem;
+    overflow: hidden;
+    box-shadow: rgba(0,0,0,0.25) 0rem 2rem 3rem;
+}
+.vertical-card:hover{
+    transform: scale(1.02);
+    transition: 0.2s all linear;
+}
+.vertical-card .card-header{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75rem;
+    width: 100%;
+    background-color: var(--clr-grey);
+}
+.vertical-card .card-header  img{
+    padding: 1rem;
+    width: 15rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    height: 17.5rem;
+}
+.vertical-card .card-content{
+    background-color: white;
+    font-weight: bolder;
+    padding: 1rem;
+    margin: 0;
+}
+.vertical-card .card-content 
+.card-description{
+    margin: 0;
+}
+.vertical-card .card-content 
+.card-description .title{
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+.card-content .rating{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: gold;
+}
+.price{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--clr-red);
+    font-weight: 600;
+}
+.card-clr-variant {
+    margin: 1.5rem 0;
+    display: flex;
+}
+.card-clr-variant  > li{
+    margin-inline: 0 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+}
+.card-content .btn{
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+ 
